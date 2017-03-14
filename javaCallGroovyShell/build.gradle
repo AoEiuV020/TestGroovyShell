@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'application'
+mainClassName = "aoeiuv020.Main"
+repositories {
+    jcenter()
+}
+run{
+	standardInput = System.in
+}
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.21'
+	compile localGroovy()
+    testCompile 'junit:junit:4.12'
+}
